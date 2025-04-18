@@ -66,7 +66,7 @@ if st.button("Check Strength"):
         st.warning("Please enter a password first!") # show warning if password empty
 
 #Button working 
-if st.button("Check Strength"):
+if st.button("Check Strength", key="check_strength_button"):
     if password:
         check_password_strength(password)
     else:
